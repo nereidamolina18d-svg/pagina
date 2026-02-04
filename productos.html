@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - NatureLens</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/productos.css">
+</head>
+<body>
+
+<!-- ENCABEZADO -->
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>NatureLens</h1>
+            <p class="tagline">Capturando la esencia natural</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html" class="active">Portfolio</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- SECCION DE TITULO -->
+<section class="page-title">
+    <div class="container">
+        <h2>Nuestro Portfolio</h2>
+        <p>Explora nuestra colección de trabajos fotográficos</p>
+    </div>
+</section>
+
+<!-- RADIOS (CLAVE PARA EL FILTRADO) -->
+<input type="radio" name="filter" id="all" checked>
+<input type="radio" name="filter" id="paisajes">
+<input type="radio" name="filter" id="naturaleza">
+<input type="radio" name="filter" id="macro">
+<input type="radio" name="filter" id="artistico">
+
+<!-- FILTROS -->
+<section class="filters">
+    <div class="container">
+        <div class="filter-buttons">
+            <label for="all" class="filter-btn">Todos</label>
+            <label for="paisajes" class="filter-btn">Paisajes</label>
+            <label for="naturaleza" class="filter-btn">Naturaleza</label>
+            <label for="macro" class="filter-btn">Macro</label>
+            <label for="artistico" class="filter-btn">Artístico</label>
+        </div>
+    </div>
+</section>
+
+<!-- GALERÍA -->
+<section class="gallery">
+    <div class="container">
+        <div class="gallery-grid">
+
+            <!-- PAISAJES -->
+            <div class="gallery-item paisajes"><img src="imagenes/pa1.jpeg"><div class="gallery-overlay"><h3>Paisaje 1</h3></div></div>
+            <div class="gallery-item paisajes"><img src="imagenes/pa2.jpeg"><div class="gallery-overlay"><h3>Paisaje 2</h3></div></div>
+            <div class="gallery-item paisajes"><img src="imagenes/pa3.jpg"><div class="gallery-overlay"><h3>Paisaje 3</h3></div></div>
+            <div class="gallery-item paisajes"><img src="imagenes/pa4.jpg"><div class="gallery-overlay"><h3>Paisaje 4</h3></div></div>
+            <div class="gallery-item paisajes"><img src="imagenes/pa5.jpg"><div class="gallery-overlay"><h3>Paisaje 5</h3></div></div>
+            <div class="gallery-item paisajes"><img src="imagenes/pa6.jpeg"><div class="gallery-overlay"><h3>Paisaje 6</h3></div></div>
+
+            <!-- NATURALEZA -->
+            <div class="gallery-item naturaleza"><img src="imagenes/na1.jpg"><div class="gallery-overlay"><h3>Naturaleza 1</h3></div></div>
+            <div class="gallery-item naturaleza"><img src="imagenes/na2.jpeg"><div class="gallery-overlay"><h3>Naturaleza 2</h3></div></div>
+            <div class="gallery-item naturaleza"><img src="imagenes/na3.jpg"><div class="gallery-overlay"><h3>Naturaleza 3</h3></div></div>
+            <div class="gallery-item naturaleza"><img src="imagenes/na4.webp"><div class="gallery-overlay"><h3>Naturaleza 4</h3></div></div>
+            <div class="gallery-item naturaleza"><img src="imagenes/na5.jpg"><div class="gallery-overlay"><h3>Naturaleza 5</h3></div></div>
+            <div class="gallery-item naturaleza"><img src="imagenes/na6.jpg"><div class="gallery-overlay"><h3>Naturaleza 6</h3></div></div>
+
+            <!-- MACRO -->
+            <div class="gallery-item macro"><img src="imagenes/ma1.jpg"><div class="gallery-overlay"><h3>Macro 1</h3></div></div>
+            <div class="gallery-item macro"><img src="imagenes/ma2.jpg"><div class="gallery-overlay"><h3>Macro 2</h3></div></div>
+            <div class="gallery-item macro"><img src="imagenes/ma3.webp"><div class="gallery-overlay"><h3>Macro 3</h3></div></div>
+            <div class="gallery-item macro"><img src="imagenes/ma4.jpg"><div class="gallery-overlay"><h3>Macro 4</h3></div></div>
+            <div class="gallery-item macro"><img src="imagenes/ma5.jpg"><div class="gallery-overlay"><h3>Macro 5</h3></div></div>
+            <div class="gallery-item macro"><img src="imagenes/ma6.jpeg"><div class="gallery-overlay"><h3>Macro 6</h3></div></div>
+
+            <!-- ARTÍSTICO -->
+            <div class="gallery-item artistico"><img src="imagenes/ar1.png"><div class="gallery-overlay"><h3>Artístico 1</h3></div></div>
+            <div class="gallery-item artistico"><img src="imagenes/ar2.jpeg"><div class="gallery-overlay"><h3>Artístico 2</h3></div></div>
+            <div class="gallery-item artistico"><img src="imagenes/ar3.jpg"><div class="gallery-overlay"><h3>Artístico 3</h3></div></div>
+            <div class="gallery-item artistico"><img src="imagenes/ar4.jpeg"><div class="gallery-overlay"><h3>Artístico 4</h3></div></div>
+            <div class="gallery-item artistico"><img src="imagenes/ar5.jpg"><div class="gallery-overlay"><h3>Artístico 5</h3></div></div>
+            <div class="gallery-item artistico"><img src="imagenes/ar6.webp"><div class="gallery-overlay"><h3>Artístico 6</h3></div></div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PIE DE PAGINA -->
+<footer>
+    <div class="container">
+        <p>&copy; 2026 NatureLens</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - NatureLens</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contactos.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>NatureLens</h1>
+                <p class="tagline">Capturando la esencia natural</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Portfolio</a></li>
+                    <li><a href="presupuesto.html">Presupuesto</a></li>
+                    <li><a href="contactos.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-title">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Estamos aquí para ayudarte con tu proyecto fotográfico</p>
+        </div>
+    </section>
+
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Dirección</h3>
+                    <p>Calle de la Fotografía, 123<br>28001 Madrid, España</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Teléfono</h3>
+                    <p>+34 912 345 678<br>Lun - Vie: 9:00 - 18:00</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>info@naturelens.com<br>contacto@naturelens.com</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">🕒</div>
+                    <h3>Horario</h3>
+                    <p>Lunes - Viernes: 9:00 - 18:00<br>Sábados: 10:00 - 14:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-form-section">
+        <div class="container">
+            <div class="map-form-grid">
+                
+                <div class="map-container">
+                    <h3>Nuestra Ubicación</h3>
+
+                    <!-- MAPA REAL INSERTADO -->
+                    <div class="map-placeholder">
+                        <iframe 
+                            src="https://www.google.com/maps?q=Calle%20de%20la%20Fotograf%C3%ADa%20123%20Madrid%20Espa%C3%B1a&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <p class="map-description">
+                        Nuestro estudio se encuentra en el corazón de Madrid, con fácil acceso en transporte público y parking disponible.
+                    </p>
+                </div>
+
+                <div class="quick-contact-form">
+                    <h3>Envíanos un Mensaje</h3>
+                    <p class="form-intro">¿Tienes alguna pregunta? Completa este formulario y te responderemos lo antes posible.</p>
+                    
+                    <form action="#" method="post" id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre-contacto">Nombre</label>
+                            <input type="text" id="nombre-contacto" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email-contacto">Email</label>
+                            <input type="email" id="email-contacto" name="email" placeholder="tu@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NatureLens</h3>
+                    <p>Fotografía profesional que conecta con la naturaleza</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Dirección</h3>
+                    <p>Calle de la Fotografía, 123<br>28001 Madrid, España<br>Tel: +34 912 345 678</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                <a href="https://facebook.com" target="_blank"><img src="imagenes/faceboock.svg" alt="Facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img src="imagenes/twitter.svg" alt="Twitter"></a>
+                <a href="https://instagram.com" target="_blank"><img src="imagenes/instagram.svg" alt="Instagram"></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

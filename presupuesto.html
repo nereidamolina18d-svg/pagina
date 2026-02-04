@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto - NatureLens</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/presupuesto.css">
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>NatureLens</h1>
+                <p class="tagline">Capturando la esencia natural</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Portfolio</a></li>
+                    <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
+                    <li><a href="contactos.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCION DEL TITULO -->
+    <section class="page-title">
+        <div class="container">
+            <h2>Solicita tu Presupuesto</h2>
+            <p>Completa el formulario y nos pondremos en contacto contigo</p>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE PRESUPUESTO -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-info">
+                    <h3>¿Por qué elegirnos?</h3>
+                    <ul class="benefits-list">
+                        <li>✓ Más de 10 años de experiencia</li>
+                        <li>✓ Equipo profesional altamente calificado</li>
+                        <li>✓ Tecnología de última generación</li>
+                        <li>✓ Presupuestos personalizados</li>
+                        <li>✓ Resultados garantizados</li>
+                        <li>✓ Atención al cliente 24/7</li>
+                    </ul>
+                    
+                    <div class="info-box">
+                        <h4>📞 ¿Prefieres llamar?</h4>
+                        <p>Estamos disponibles de lunes a viernes</p>
+                        <p class="phone-number">+34 912 345 678</p>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <form action="#" method="post" id="presupuestoForm">
+                        <h3>Datos de Contacto</h3>
+                        
+                        <!-- Campo Nombre -->
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input 
+                                type="text" 
+                                id="nombre" 
+                                name="nombre" 
+                                placeholder="Escribe tu nombre completo"
+                                required
+                                minlength="3"
+                                maxlength="100">
+                        </div>
+
+                        <!-- Campo Email -->
+                        <div class="form-group">
+                            <label for="email">Correo electrónico *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="ejemplo@correo.com"
+                                required>
+                        </div>
+
+                        <!-- Campo Teléfono -->
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input 
+                                type="tel" 
+                                id="telefono" 
+                                name="telefono" 
+                                placeholder="+34 600 000 000"
+                                required
+                                pattern="[0-9+\s()-]{9,20}">
+                        </div>
+
+                        <!-- Campo Tipo de Servicio -->
+                        <div class="form-group">
+                            <label for="servicio">Tipo de servicio</label>
+                            <select id="servicio" name="servicio">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="paisajes">Fotografía de Paisajes</option>
+                                <option value="naturaleza">Fotografía de Naturaleza</option>
+                                <option value="artistico">Fotografía Artística</option>
+                                <option value="eventos">Eventos y Sesiones</option>
+                                <option value="otro">Otro (especificar en comentarios)</option>
+                            </select>
+                        </div>
+
+                        <!-- Campo Fecha Estimada -->
+                        <div class="form-group">
+                            <label for="fecha">Fecha estimada del proyecto</label>
+                            <input 
+                                type="date" 
+                                id="fecha" 
+                                name="fecha"
+                                min="2024-01-01">
+                        </div>
+
+                        <!-- Campo Presupuesto -->
+                        <div class="form-group">
+                            <label for="presupuesto">Presupuesto aproximado (€)</label>
+                            <input 
+                                type="number" 
+                                id="presupuesto" 
+                                name="presupuesto" 
+                                placeholder="Ej: 500"
+                                min="0"
+                                step="50">
+                        </div>
+
+                        <!-- Campo Información Adicional -->
+                        <div class="form-group">
+                            <label for="informacion">Solicite más información *</label>
+                            <textarea 
+                                id="informacion" 
+                                name="informacion" 
+                                rows="5"
+                                placeholder="Describe tu proyecto: tipo de fotografía, ubicación, número de imágenes, uso previsto, etc."
+                                required
+                                minlength="10"
+                                maxlength="1000"></textarea>
+                            <span class="char-counter">0 / 1000 caracteres</span>
+                        </div>
+
+                        <!-- Checkbox Política de Privacidad -->
+                        <div class="form-group checkbox-group">
+                            <input 
+                                type="checkbox" 
+                                id="privacidad" 
+                                name="privacidad" 
+                                required>
+                            <label for="privacidad">
+                                Acepto la <a href="#politica-privacidad" target="_blank">Política de Privacidad</a> y el tratamiento de mis datos personales *
+                            </label>
+                        </div>
+
+                        <!-- Checkbox Newsletter (opcional) -->
+                        <div class="form-group checkbox-group">
+                            <input 
+                                type="checkbox" 
+                                id="newsletter" 
+                                name="newsletter">
+                            <label for="newsletter">
+                                Deseo recibir información sobre promociones y novedades
+                            </label>
+                        </div>
+
+                        <!-- Botón de envío -->
+                        <button type="submit" class="btn-submit">
+                            Enviar Solicitud
+                        </button>
+
+                        <p class="form-note">* Campos obligatorios</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NatureLens</h3>
+                    <p>Fotografía profesional que conecta con la naturaleza</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Dirección</h3>
+                    <p>Calle de la Fotografía, 123<br>28001 Madrid, España<br>Tel: +34 912 345 678</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NatureLens. Todos los derechos reservados. | <a href="#aviso-legal">Aviso Legal</a> | <a href="#privacidad">Política de Privacidad</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIP CONTADOR DE CARACTERES -->
+    <script>
+        // Contador de caracteres para el textarea
+        const textarea = document.getElementById('informacion');
+        const charCounter = document.querySelector('.char-counter');
+        
+        textarea.addEventListener('input', function() {
+            const currentLength = this.value.length;
+            charCounter.textContent = `${currentLength} / 1000 caracteres`;
+        });
+    </script>
+</body>
+</html>

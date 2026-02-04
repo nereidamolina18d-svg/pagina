@@ -1,0 +1,300 @@
+/* ===================================
+   ESTILOS ESPECÍFICOS PARA CONTACTO
+   =================================== */
+
+/* Sección de información de contacto */
+.contact-info-section {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.contact-card {
+    background-color: #f8f9fa;
+    padding: 2.5rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(44, 95, 45, 0.15);
+}
+
+/* ===== ICONOS CONTACTO (SVG / IMG) ===== */
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(151, 197, 147, 0.15);
+    border-radius: 50%;
+}
+
+.contact-icon img,
+.contact-icon svg {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    fill: #2c5f2d;
+}
+
+/* Hover icono */
+.contact-card:hover .contact-icon {
+    background-color: #97c593;
+}
+
+.contact-card:hover .contact-icon img,
+.contact-card:hover .contact-icon svg {
+    filter: brightness(0) invert(1);
+}
+
+/* Texto */
+.contact-card h3 {
+    color: #2c5f2d;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card p {
+    color: #555;
+    line-height: 1.8;
+}
+
+/* ===================================
+   SECCIÓN MAPA Y FORMULARIO
+   =================================== */
+
+.map-form-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.map-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+/* Contenedor del mapa */
+.map-container h3 {
+    color: #2c5f2d;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.map-placeholder {
+    position: relative;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 400px;
+}
+
+.map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.map-placeholder iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.map-description {
+    color: #555;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+/* ===================================
+   FORMULARIO DE CONTACTO RÁPIDO
+   =================================== */
+
+.quick-contact-form {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.quick-contact-form h3 {
+    color: #2c5f2d;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.form-intro {
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.quick-contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.quick-contact-form label {
+    display: block;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.quick-contact-form input,
+.quick-contact-form textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.quick-contact-form input:focus,
+.quick-contact-form textarea:focus {
+    outline: none;
+    border-color: #97c593;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(151, 197, 147, 0.1);
+}
+
+.quick-contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* ===================================
+   INFORMACIÓN ADICIONAL
+   =================================== */
+
+.additional-info {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.additional-info h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c5f2d;
+    margin-bottom: 3rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.info-item {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #97c593;
+}
+
+.info-item h4 {
+    color: #2c5f2d;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.info-item p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* ===================================
+   FAQ
+   =================================== */
+
+.faq-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c5f2d;
+    margin-bottom: 3rem;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.faq-item {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(44, 95, 45, 0.15);
+}
+
+.faq-item h4 {
+    color: #2c5f2d;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.faq-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+
+@media (max-width: 992px) {
+    .map-form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-info-section,
+    .map-form-section,
+    .additional-info,
+    .faq-section {
+        padding: 2rem 0;
+    }
+
+    .quick-contact-form {
+        padding: 1.5rem;
+    }
+
+    .map-placeholder {
+        height: 300px;
+    }
+
+    .faq-grid,
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
